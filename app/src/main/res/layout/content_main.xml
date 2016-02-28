@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/activityBackground"
+                  android:orientation="vertical"
+                  android:paddingBottom="@dimen/activity_vertical_margin"
+                  android:paddingLeft="@dimen/activity_horizontal_margin"
+                  android:paddingRight="@dimen/activity_horizontal_margin"
+                  android:paddingTop="@dimen/activity_vertical_margin"
+                  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                  tools:context="com.vomtom.refugeebuddy.MainActivity"
+                  tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/mapicon"
+                />
+
+            <TextView
+                android:id="@+id/label_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="true"
+                android:text="@string/current_position"
+                android:textSize="@dimen/label_title"
+                />
+
+
+            <TextView
+                android:id="@+id/textview_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/wide_space"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="true"
+                />
+
+            <Button
+                android:id="@+id/textview_sharelink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:gravity="center_horizontal"
+
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/textview_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="true"
+
+                android:text="@string/no_location_yet"
+                />
+
+            <TextView
+                android:id="@+id/textview_speed_altitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="true"
+                />
+
+            <TextView
+                android:id="@+id/textview_bearing_accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="true"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/wide_space"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnShareLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:drawableLeft="@android:drawable/ic_menu_share"
+                    android:drawablePadding="@dimen/fab_margin"
+                    android:drawableStart="@android:drawable/ic_menu_share"
+                    android:padding="@dimen/fab_margin"
+                    android:text="@string/btn_share_location"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/btnOpenMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@android:drawable/ic_dialog_map"
+                    android:drawablePadding="@dimen/fab_margin"
+                    android:drawableStart="@android:drawable/ic_dialog_map"
+                    android:padding="@dimen/fab_margin"
+                    android:text="@string/btn_open_map"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

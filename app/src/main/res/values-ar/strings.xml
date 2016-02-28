@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+    <string name="app_name">RefugeeBuddy Location and News</string>
+    <string name="action_news">أخبار الحرب</string>
+    <string name="action_settings">إحداثيات</string>
+    <string name="btn_open_map"> فتح الخريطة</string>
+    <string name="btn_share_location">مشاركة الموقع</string>
+    <string name="current_position"> الموقع الحالي</string>
+    <string name="distance">مسافه</string>
+    <string name="distance_km">%1$.2f كم</string>
+    <string name="location_activity_name">موقع</string>
+    <string name="my_locations_activity"> بلدي المواقع</string>
+    <string name="no_location_yet">لم يتم العثور على الموقع</string>
+    <string name="refugee_war_news_activity_name"> أخبار اللاجئين والحرب</string>
+    <string name="share_current_location"> مشاركة الموقع الحالي</string>
+    <string name="share_location_url">موقفي الحالي: https://www.google.com/maps/place/%1$.7f+%2$.7f/@%1$.7f,%2$.7f,7z</string>
+    <string name="track_me">اضغط هنا وأصدقائك يمكن متابعة لكم</string>
+    <string name="track_me_link"> اتبعني هناhttp://refugeebuddy.newscombinator.com/#/%1$s</string>
+</resources>

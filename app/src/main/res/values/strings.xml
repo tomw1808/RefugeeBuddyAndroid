@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+    <string name="app_name">RefugeeBuddy Location and News</string>
+    <string name="location_activity_name">Location</string>
+    <string name="action_settings">Locations</string>
+    <string name="lat">Lat</string>
+    <string name="lng">Lon</string>
+    <string name="distance">Distance</string>
+    <string name="current_position">Current Position</string>
+    <string name="share_current_location">Share your current Location</string>
+    <string name="no_location_yet">No Location so far</string>
+    <string name="btn_share_location">Share\nPosition</string>
+    <string name="btn_open_map">Open\nMap</string>
+    <string name="lat_lng_positon">Lat: %1$.7f - Long: %2$.7f</string>
+    <string name="speed_altitude">Speed: %1$.2f m/s, Altitude: %2$d m</string>
+    <string name="bearing_accuracy">Bearing: %1$.2f°, Accuracy: within %2$d m</string>
+    <string name="distance_km">%1$.2f km</string>
+    <string name="share_location_url">My current position: https://www.google.com/maps/place/%1$.7f+%2$.7f/@%1$.7f,%2$.7f,7z</string>
+    <string name="upload_tried_failed">Location Tracker tried to upload but failed.</string>
+    <string name="sql_open_exception">Cannot open Database, Aborting</string>
+    <string name="action_news">Refugee News</string>
+    <string name="track_me">Click here to let other people follow me</string>
+    <string name="track_me_link">Click here to see where I am and follow me: http://refugeebuddy.newscombinator.com/#/%1$s</string>
+    <string name="refugee_war_news_activity_name">Refugee and War News</string>
+    <string name="my_locations_activity">My Locations</string>
+</resources>

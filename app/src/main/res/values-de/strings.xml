@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RefugeeBuddy Location and News</string>
+    <string name="location_activity_name">Position</string>
+    <string name="action_settings">Koordinaten</string>
+    <string name="action_news">Nachrichten</string>
+    <string name="bearing_accuracy">Neigung: %1$.2f°, Genauigkeit bei ca %2$d M.</string>
+    <string name="btn_open_map">Karte\nöffnen</string>
+    <string name="btn_share_location">Position\nteilen</string>
+    <string name="current_position">Derzeitige Position</string>
+    <string name="distance">Entfernung</string>
+    <string name="distance_km">%1$.2f km</string>
+    <string name="lat">Breit.</string>
+    <string name="lat_lng_positon">Breit: %1$.7f - Länge: %2$.7f</string>
+    <string name="lng">Länge</string>
+    <string name="no_location_yet">Keine Position bis jetzt</string>
+    <string name="share_current_location">Die derzeitige Position teilen</string>
+    <string name="share_location_url">Meine Position: https://www.google.com/maps/place/%1$.7f+%2$.7f/@%1$.7f,%2$.7f,7z</string>
+    <string name="speed_altitude">Geschw: %1$.2f m/s, Höhe: %2$d m</string>
+    <string name="sql_open_exception">Datenbank kann nicht geöffnet werden. Abbruch.</string>
+    <string name="upload_tried_failed">Uploadversuch fehlgeschlagen.</string>
+    <string name="my_locations_activity">Meine Koordinaten</string>
+    <string name="refugee_war_news_activity_name">Flüchtlings und Kriegsnachrichten</string>
+    <string name="track_me">Hier klicken um anderen ermöglichen mir zu folgen</string>
+    <string name="track_me_link">Klicke hier um zu sehen wo ich bin und mir zu folgen: http://refugeebuddy.newscombinator.com/#/%1$s</string>
+</resources>
