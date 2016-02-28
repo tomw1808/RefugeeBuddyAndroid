@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>RefugeeBuddy - Android by tomw1808</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">RefugeeBuddy - Android</h1>
+      <h2 class="project-tagline">Refugee Buddy allows Refugees to share their current location with friends and being informed of the ongoing.</h2>
+      <a href="https://github.com/tomw1808/RefugeeBuddyAndroid" class="btn">View on GitHub</a>
+      <a href="https://github.com/tomw1808/RefugeeBuddyAndroid/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/tomw1808/RefugeeBuddyAndroid/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="refugeebuddy---android" class="anchor" href="#refugeebuddy---android" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>RefugeeBuddy - Android</h1>
+
+<p>The war in the middle east is ongoing and devastating. Millions of people are trying to escape. They often leave their family and friends behind, try to make it on their own to the EU, Ameria, or elsewhere safe. Communication is not always possible with everyone, and tracking apps are not always as easy to use as they should be. </p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.vomtom.refugeebuddy"><img src="https://raw.githubusercontent.com/tomw1808/RefugeeBuddyAndroid/master/docs/en-play-badge.png" alt="Download"></a></p>
+
+<h2>
+<a id="what-does-the-refugeebuddy" class="anchor" href="#what-does-the-refugeebuddy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What does the RefugeeBuddy?</h2>
+
+<p>This is an android app which does two things:</p>
+
+<ol>
+<li>it makes it <em>very</em> easy to let friends and family members track a phone and know where you are.</li>
+<li>it has a dedicated war and refugee news aggregation page to keep refugees informed.</li>
+</ol>
+
+<h2>
+<a id="tracker" class="anchor" href="#tracker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tracker</h2>
+
+<p>Family members and friends are left behind, communication is more than often not very easy. Sometimes weak signals, very low bandwidth or only short availability of signals makes it hard to keep chatting or posting on social networks.</p>
+
+<p>The RefugeeBuddy collects location information and, when a network is available, transfers it to a server, so that friends and family members can see where the person is right now (or was the last time).</p>
+
+<h3>
+<a id="how-is-that-different-to-all-other-gps-trackers" class="anchor" href="#how-is-that-different-to-all-other-gps-trackers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How is that different to all other GPS trackers?</h3>
+
+<ul>
+<li>Open Source: This app is open source, in addition to being free of charge. No ads - so far.</li>
+<li>Low Battery usage: While other apps try to get the location as accurate as possible, here its more meant for saving some battery life. Block-Level accuracy is more than enough. I let this app run the whole day on my phone without any huge impact on battery life.</li>
+<li>No shady things: The source code is openly visible. We don't collect more than necessary. If you feel things should be done in a different way, shoot me an email, make a pull request. I'm happy to change things.</li>
+</ul>
+
+<h3>
+<a id="location-service" class="anchor" href="#location-service" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Location Service</h3>
+
+<p>The location service was actually the "side" service to the news service, but it turned out that I found it far more important than the news service. </p>
+
+<p><img src="https://raw.githubusercontent.com/tomw1808/RefugeeBuddyAndroid/master/docs/storegraphics.jpg" alt="Screenshot RefugeeBuddyFrontend" title="Screenshot RefugeeBuddy Angular Frontend"></p>
+
+<p>You can find <a href="http://refugeebuddy.newscombinator.com/#/1">an example here</a>. The frontend is written in angular and is <a href="https://github.com/tomw1808/LocationTrackerFrontend">open source</a>. </p>
+
+<p>It is an Angular App with OpenStreetMap Data. The backend is a simple PHP script which writes something to a database (and reads it again from that database). While the backend is not open source, because it is integrated in some other projects, its really not hard to make it.</p>
+
+<h3>
+<a id="refugee-news" class="anchor" href="#refugee-news" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Refugee News</h3>
+
+<p>The news in the app are coming from one of my own side projects, the <a href="http://www.newscombinator.com/smartfilters">newscombinator smart-filters</a>, which is a news aggregation service where machine learning filters are applied on top of it. You can directly open the news in the <a href="http://live.newscombinator.com/#!/96">newscombiantor-live-app</a>, a foundation-project which is also <a href="https://github.com/tomw1808/newscombinator-live">open source</a>.</p>
+
+<h2>
+<a id="android-app" class="anchor" href="#android-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android App</h2>
+
+<p>You can download the Android-App in the <a href="https://play.google.com/store/apps/details?id=com.vomtom.refugeebuddy">Android Playstore</a>.</p>
+
+<h3>
+<a id="permissions" class="anchor" href="#permissions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Permissions</h3>
+
+<pre><code>&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/&gt;
+</code></pre>
+
+<p>While the app does not really use the Fine-Location, I have added the permission in order to get the fine location when its needed. If you publish an app in the playstore and add permissions later on, you will need to manually approve the app again in order to receive updates. To avoid that - and for future use - the permission is already added.</p>
+
+<pre><code>&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;
+</code></pre>
+
+<p>Those two permissions are pretty self explanatory. The app needs internet access in order to send updates to the server. The app also needs access to the network state in order to know if there is internet access available.</p>
+
+<pre><code>&lt;uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /&gt;
+</code></pre>
+
+<p>This is a good one. Currently the app does not have a settings page, where a user could choose if he wanted to start the tracking server automatically after turning on the phone. I'm planning to integrate this and its also already prepared, but not yet ready.</p>
+
+<h3>
+<a id="translations" class="anchor" href="#translations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translations</h3>
+
+<p>The app is currently translated to German, properly, from a native speaker. <em>The arabic translation was made with google-translate</em>, I found it should have at least basic arabic translation to let people better understand what is going on. I would be happy if someone could look through it and eventually provide more translations.</p>
+
+<h2>
+<a id="ios" class="anchor" href="#ios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iOS</h2>
+
+<p>Currently there is no iOS version of this app. I do not have an iPhone, yet, so, no.</p>
+
+<h2>
+<a id="questions" class="anchor" href="#questions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Questions</h2>
+
+<p>If you have any questions, please feel free to contact me at any time. You can either do that by mailing me: thomas [at] newscombinator.com, or chatting with me via the chat-plugin on <a href="http://www.newscombinator.com">www.newscombinator.com</a> or open an issue.</p>
+
+<h2>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<p><img src="https://raw.githubusercontent.com/tomw1808/RefugeeBuddyAndroid/master/docs/screenshots/Screenshot_2016-02-26-17-41-09.png" alt="Screenshot RefugeeBuddy" title="Screenshot RefugeeBuddy">
+<img src="https://raw.githubusercontent.com/tomw1808/RefugeeBuddyAndroid/master/docs/screenshots/Screenshot_2016-02-26-17-43-36.png" alt="Screenshot RefugeeBuddy" title="Screenshot RefugeeBuddy"></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/tomw1808/RefugeeBuddyAndroid">RefugeeBuddy - Android</a> is maintained by <a href="https://github.com/tomw1808">tomw1808</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-56946470-7");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
