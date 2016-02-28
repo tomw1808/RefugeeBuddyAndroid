@@ -17,10 +17,9 @@ The RefugeeBuddy collects location information and, when a network is available,
 * No shady things: The source code is openly visible. We don't collect more than necessary. If you feel things should be done in a different way, shoot me an email, make a pull request. I'm happy to change things.
 
 ## Background & My Person
-Initially I did this, because I was trying to re-learn Java for Android. In mid January 2016 I thought I could write something useful, something with news and maybe a little bit location aware software. I'm the founder of the [newscombinator](http://www.newscombinator.com) and I am working in the finance sector. If this app helps anybody I'm more than happy.
+Initially I did this, because I was trying to re-learn Java for Android. I wanted to learn more about the Android GPS system and kind-of re-learn what I once knew already from some apps I was writing 2011/2012. In mid January 2016 I thought I could write something useful, something with news and maybe a little bit location aware software. 
 
-### Refugee News
-The news in the app are coming conventiently from my own side project, the [newscombinator smart-filters](http://www.newscombinator.com/smartfilters), which is a news aggregation service where machine learning filters are applied on top of it. You can directly open the news in the [newscombiantor-live-app](http://live.newscombinator.com/#!/96), a foundation-project which is also [open source](https://github.com/tomw1808/newscombinator-live).
+This is what came out. If this app helps anybody I'm more than happy.
 
 ### Location Service
 The location service was actually the "side" service to the news service, but it turned out that I found it far more important than the news service. 
@@ -28,9 +27,14 @@ The location service was actually the "side" service to the news service, but it
 ![Screenshot RefugeeBuddyFrontend](./docs/storegraphics.jpg "Screenshot RefugeeBuddy Angular Frontend")
 
 
-You can find it [for example here](http://refugeebuddy.newscombinator.com/#/). The frontend is also [open source](https://github.com/tomw1808/LocationTrackerFrontend). 
+You can find [an example here](http://refugeebuddy.newscombinator.com/#/1). The frontend is written in angular and is [open source](https://github.com/tomw1808/LocationTrackerFrontend). 
 
-It is an Angular App with OpenStreetMap Data. The backend is a simple PHP script which writes something to a database (and reads it again from that database). While that is not open source, its really not hard to make it.
+It is an Angular App with OpenStreetMap Data. The backend is a simple PHP script which writes something to a database (and reads it again from that database). While the backend is not open source, because it is integrated in some other projects, its really not hard to make it.
+
+
+### Refugee News
+The news in the app are coming from one of my own side projects, the [newscombinator smart-filters](http://www.newscombinator.com/smartfilters), which is a news aggregation service where machine learning filters are applied on top of it. You can directly open the news in the [newscombiantor-live-app](http://live.newscombinator.com/#!/96), a foundation-project which is also [open source](https://github.com/tomw1808/newscombinator-live).
+
 
 ## Android App
 You can download the Android-App in the [Android Playstore](https://play.google.com/store/apps/details?id=com.vomtom.refugeebuddy).
