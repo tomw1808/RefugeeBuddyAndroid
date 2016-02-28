@@ -1,8 +1,11 @@
 # RefugeeBuddy - Android
-The war in the middle east is ongoing and devastating. Millions of people are trying to escape. They often leave their family and friends behind, try to make it on their own to the EU, Ameria, or elsewhere safe. Communication is not always possible with everyone, and tracking apps are not always as easy to use as they should be.
+The war in the middle east is ongoing and devastating. Millions of people are trying to escape. They often leave their family and friends behind, try to make it on their own to the EU, Ameria, or elsewhere safe. Communication is not always possible with everyone, and tracking apps are not always as easy to use as they should be. 
+
+[Download and try the app from the Android Playstore](https://play.google.com/store/apps/details?id=com.vomtom.refugeebuddy)
 
 ## What does the RefugeeBuddy?
 This is an android app which does two things:
+
 1. it makes it _very_ easy to let friends and family members track a phone and know where you are.
 2. it has a dedicated war and refugee news aggregation page to keep refugees informed.
 
@@ -59,6 +62,9 @@ This is a good one. Currently the app does not have a settings page, where a use
 
 ### Translations
 The app is currently translated to German, properly, from a native speaker. _The arabic translation was made with google-translate_, I found it should have at least basic arabic translation to let people better understand what is going on. I would be happy if someone could look through it and eventually provide more translations.
+
+## iOS
+Currently there is no iOS version of this app. I do not have an iPhone, yet, so, no.
 
 ## License
 The source is licensed under GNU General Public License v3.0, which means for you, if you want to use the source code, in short:
