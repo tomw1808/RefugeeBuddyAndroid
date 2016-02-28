@@ -1,9 +1,6 @@
 # RefugeeBuddy - Android
 The war in the middle east is ongoing and devastating. Millions of people are trying to escape. They often leave their family and friends behind, try to make it on their own to the EU, Ameria, or elsewhere safe. Communication is not always possible with everyone, and tracking apps are not always as easy to use as they should be.
 
-![Screenshot RefugeeBuddy](./docs/screenshots/Screenshot_2016-02-27-15-17-02.png "Screenshot RefugeeBuddy")
-
-
 ## What does the RefugeeBuddy?
 This is an android app which does two things:
 1. it makes it _very_ easy to let friends and family members track a phone and know where you are.
@@ -83,3 +80,10 @@ Forbidden
 
 ## Questions
 If you have any questions, please feel free to contact me at any time. You can either do that by mailing me: thomas [at] newscombinator.com, or chatting with me via the chat-plugin on www.newscombinator.com or open an issue.
+
+## Screenshots
+
+![Screenshot RefugeeBuddy](./docs/screenshots/Screenshot_2016-02-26-17-41-09.png "Screenshot RefugeeBuddy")
+![Screenshot RefugeeBuddy](./docs/screenshots/Screenshot_2016-02-26-17-43-28.png "Screenshot RefugeeBuddy")
+![Screenshot RefugeeBuddy](./docs/screenshots/Screenshot_2016-02-27-15-17-02.png "Screenshot RefugeeBuddy")
+
