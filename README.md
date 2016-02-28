@@ -36,7 +36,7 @@ You can find it [for example here](http://refugeebuddy.newscombinator.com/#/). T
 It is an Angular App with OpenStreetMap Data. The backend is a simple PHP script which writes something to a database (and reads it again from that database). While that is not open source, its really not hard to make it.
 
 ## Android App
-You can download the Android-App in the [Android Playstore](https://play.google.com/store/apps/details?id=com.vomtom.mytestservice).
+You can download the Android-App in the [Android Playstore](https://play.google.com/store/apps/details?id=com.vomtom.refugeebuddy).
 
 ### Permissions
 
@@ -54,6 +54,10 @@ Those two permissions are pretty self explanatory. The app needs internet access
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     
 This is a good one. Currently the app does not have a settings page, where a user could choose if he wanted to start the tracking server automatically after turning on the phone. I'm planning to integrate this and its also already prepared, but not yet ready.
+
+
+### Translations
+The app is currently translated to German, properly, from a native speaker. _The arabic translation was made with google-translate_, I found it should have at least basic arabic translation to let people better understand what is going on. I would be happy if someone could look through it and eventually provide more translations.
 
 ## License
 The source is licensed under GNU General Public License v3.0, which means for you, if you want to use the source code, in short:
