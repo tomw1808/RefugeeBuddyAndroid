@@ -22,7 +22,13 @@
       <h1>
 <a id="refugeebuddy---android" class="anchor" href="#refugeebuddy---android" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>RefugeeBuddy - Android</h1>
 
-<p>The war in the middle east is ongoing and devastating. Millions of people are trying to escape. They often leave their family and friends behind, try to make it on their own to the EU, Ameria, or elsewhere safe. Communication is not always possible with everyone, and tracking apps are not always as easy to use as they should be. </p>
+<p>The RefugeeBuddy helps people to stay visible for their family members and friends, as well as be informed about ongoings in the middle east and Europe. </p>
+
+<p>It is an open source GPS tracker and news aggregator.</p>
+
+<p>The GPS tracker is setup in a way that battery consumption is kept low. It is tried to find a middle way between accuracy and battery lifetime.</p>
+
+<p>The news aggregator is aggregating news from all major and minor news outlets, which have something to do with war news from the middle east, syria, iran, irak, turkey, as well as immigration news from Germany, Austria, Greece, Macedonia, etc.</p>
 
 <p><a href="https://play.google.com/store/apps/details?id=com.vomtom.refugeebuddy"><img src="https://raw.githubusercontent.com/tomw1808/RefugeeBuddyAndroid/master/docs/en-play-badge.png" alt="Download"></a></p>
 
@@ -41,7 +47,7 @@
 
 <p>Family members and friends are left behind, communication is more than often not very easy. Sometimes weak signals, very low bandwidth or only short availability of signals makes it hard to keep chatting or posting on social networks.</p>
 
-<p>The RefugeeBuddy collects location information and, when a network is available, transfers it to a server, so that friends and family members can see where the person is right now (or was the last time).</p>
+<p>The RefugeeBuddy collects location information and, when a network is available, transfers it to a server, so that friends and family members can see where the person is right now (or was the last time). A link can be shared among friends and family members to keep track of the Phone.</p>
 
 <h3>
 <a id="how-is-that-different-to-all-other-gps-trackers" class="anchor" href="#how-is-that-different-to-all-other-gps-trackers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How is that different to all other GPS trackers?</h3>
@@ -55,23 +61,16 @@
 <h3>
 <a id="location-service" class="anchor" href="#location-service" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Location Service</h3>
 
-<p>The location service was actually the "side" service to the news service, but it turned out that I found it far more important than the news service. </p>
+<p>Once the link is shared, a browser can be opened and an OpenStreetMap is following the phone automatically.</p>
 
 <p><img src="https://raw.githubusercontent.com/tomw1808/RefugeeBuddyAndroid/master/docs/storegraphics.jpg" alt="Screenshot RefugeeBuddyFrontend" title="Screenshot RefugeeBuddy Angular Frontend"></p>
 
 <p>You can find <a href="http://refugeebuddy.newscombinator.com/#/1">an example here</a>. The frontend is written in angular and is <a href="https://github.com/tomw1808/LocationTrackerFrontend">open source</a>. </p>
 
-<p>It is an Angular App with OpenStreetMap Data. The backend is a simple PHP script which writes something to a database (and reads it again from that database). While the backend is not open source, because it is integrated in some other projects, its really not hard to make it.</p>
-
 <h3>
 <a id="refugee-news" class="anchor" href="#refugee-news" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Refugee News</h3>
 
-<p>The news in the app are coming from one of my own side projects, the <a href="http://www.newscombinator.com/smartfilters">newscombinator smart-filters</a>, which is a news aggregation service where machine learning filters are applied on top of it. You can directly open the news in the <a href="http://live.newscombinator.com/#!/96">newscombiantor-live-app</a>, a foundation-project which is also <a href="https://github.com/tomw1808/newscombinator-live">open source</a>.</p>
-
-<h2>
-<a id="android-app" class="anchor" href="#android-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android App</h2>
-
-<p>You can download the Android-App in the <a href="https://play.google.com/store/apps/details?id=com.vomtom.refugeebuddy">Android Playstore</a>.</p>
+<p>The news aggregation is collecting news from all major and minor outlets giving direct access to get a very accurate picture of what is going on right now. It is real-time, automated aggregated news. You can follow news topics or even open in on the computer.</p>
 
 <h3>
 <a id="permissions" class="anchor" href="#permissions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Permissions</h3>
